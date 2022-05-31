@@ -8,18 +8,23 @@ function App(){
         {id: 2, text: 'two'},
         {id: 3, text: 'three'}
     ]
+    const showCommnents = true
+    const commentBlock = (
+        <div className="comments">
+            <h3>Comments({comments.length})</h3>
+            <ul>
+                {comments.map((comment, index)=>(
+                    <li key={index}>{comment.text}</li>
+                ))}
+            </ul>
+        </div>
+    )
     return(
         <div className="container">
             <h1>{title.toUpperCase}</h1>
             <p>{body}</p>
-            <div className="comments">
-                <h3>Comments({comments.length})</h3>
-                <ul>
-                    {comments.map((comment, index)=>(
-                        <li key={index}>{comment.text}</li>
-                    ))}
-                </ul>
-            </div>
+
+            {showCommnents && commentBlock}
         </div>
         )
 }
