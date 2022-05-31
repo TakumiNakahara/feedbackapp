@@ -4,7 +4,7 @@ import Header from "./containers/header"
 function App(){
     return (
         <>
-            <Header text={true} />
+            <Header text="Hello World" bgColor='red' textColor='blue' />
             <div className="container">
                 <h1>MyApp</h1>
             </div>
