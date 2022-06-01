@@ -1,12 +1,13 @@
 import React from "react"
-import Header from "./containers/header"
+import Header from "./components/Header"
+import FeedBackItem from "./components/FeedBackItem"
 
 function App(){
     return (
         <>
-            <Header text="Hello World" bgColor='red' textColor='blue' />
+            <Header text="FeedBackApp" bgColor='' textColor='' />
             <div className="container">
-                <h1>MyApp</h1>
+                <FeedBackItem />
             </div>
         </>
     )

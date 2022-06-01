@@ -17,7 +17,7 @@ function Header({text,bgColor,textColor}) {
 
 Header.defaultProps = {
     text: 'Feedback App',
-    bgColor: 'rgba(0,0,0,0.4)',
+    bgColor: 'rgba(0,0,0,0.6)',
     textColor: 'FF6a95',
 }
 
